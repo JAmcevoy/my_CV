@@ -189,3 +189,58 @@ footer {
 #footer-details {
     padding: 20px;
 }
+
+.cv-pdf i {
+  font-size: 18px;
+  color: #fafafa;
+  text-align: center;
+  padding-left: 5px;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.github-link {
+  color: #fafafa;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.github-link:hover {
+  color: #e84610
+}
+
+cv-pdf i: hover {
+  color: #e84610;
+}
+
+.social-links {
+  padding-bottom: 15px;
+}
+
+.social-links li a i {
+  width: 32px;
+  height: 32px;
+  padding: 10px 0;
+  border-radius: 50%;
+  line-height: 7px;
+  text-align: center;
+  color: #fafafa;
+  background-color: #8f8f8f;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+social-links li a i {
+  background-color: #e84610;;
+}
+
+#footer-details {
+  padding: 20px;
+}
