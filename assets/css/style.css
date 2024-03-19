@@ -391,6 +391,13 @@ div#map {
     min-height: 360px;
 }
 
+/*--------------------------------------------Loading*/
+
+#loader {
+  position: relative;
+  left: 50%;
+}
+
 /*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
@@ -407,3 +414,4 @@ div#map {
         max-width: 50%;
     }
 }
+
