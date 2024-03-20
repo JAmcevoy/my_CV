@@ -15,6 +15,16 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/github-information.js"></script>
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init({
+          publicKey: "yK62LGiEs9FZ-5Fbe",
+        });
+     })();
+  </script>
   <title>Joshua</title>
 </head>
 
@@ -46,13 +56,13 @@
                 <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o"
                     aria-hidden="true"></i><span>Contact</span></a>
               </li>
-              <li class="col-6 col-sm-2 ui-menu-color-interests list-inline-item menuitem">
+              <li class="col-6 col-sm-2 ui-menu-color-github list-inline-item menuitem">
                 <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-users"
                     aria-hidden="true"></i><span>GitHub</span></a>
               </li>
               <li class="col-6 col-sm-2 ui-menu-color-download list-inline-item menuitem">
-                <a href="assets/cv/joshuamcevoy.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download"
-                    aria-hidden="true"></i><span>Download CV</span></a>
+                <a href="assets/cv/joshuamcevoy.pdf" target="_blank" class="hvr-sweep-to-bottom"><i
+                    class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
               </li>
             </ul>
           </div>
@@ -68,7 +78,7 @@
         <h5 class="uppercase text-center">Let's work together!</h5>
 
         <div class="center-form">
-          <form>
+          <form onsubmit="return sendMail(this);">
             <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
             <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
             <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
@@ -144,6 +154,7 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
